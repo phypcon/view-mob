@@ -1,0 +1,57 @@
+# This project was generated with 0.3.25 using template: https://github.com/beeware/briefcase-template @ v0.3.25
+[tool.briefcase]
+project_name = "View Mob"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/helloworld"
+license.file = "LICENSE"
+author = "I. Seveset"
+author_email = "seveset@mailo.com"
+
+[tool.briefcase.app.view_mob]
+formal_name = "View Mob Dashboard"
+description = "Powered by Python"
+long_description = """Read your destiny in the numbers.
+"""
+sources = [
+    "src/view_mob",
+]
+test_sources = [
+    "tests",
+]
+
+requires = [
+]
+test_requires = [
+    "pytest",
+]
+
+# Mobile deployments
+[tool.briefcase.app.view_mob.iOS]
+requires = [
+    "toga-iOS~=0.5.0",
+    "std-nslog~=1.0.3",
+]
+
+[tool.briefcase.app.view_mob.android]
+requires = [
+    "toga-android~=0.5.0",
+]
+
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+build_gradle_dependencies = [
+    "com.google.android.material:material:1.12.0",
+    # Needed for DetailedList
+    # "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+    # Needed for MapView
+    # "org.osmdroid:osmdroid-android:6.1.20",
+]
+
+# Web deployments
+[tool.briefcase.app.view_mob.web]
+requires = [
+    "toga-web~=0.5.0",
+]
+style_framework = "Shoelace v2.3"
+

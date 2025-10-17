@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.25
+Name: view_mob
+Formal-Name: View Mob Dashboard
+App-ID: com.example.view-mob
+Version: 0.0.1
+Home-page: https://example.com/helloworld
+Download-URL: https://example.com/helloworld
+Author: I. Seveset
+Author-email: seveset@mailo.com
+Summary: Powered by Python
